@@ -1,0 +1,10 @@
+name:      "Brock Cagann"
+markdown:  redcarpet
+pygments:  true
+permalink: pretty
+prose:
+  siteurl: "http://adamclaxon.github.io"
+  media: "img"
+  rooturl: "_posts"
+  metadata:
+    _posts:
