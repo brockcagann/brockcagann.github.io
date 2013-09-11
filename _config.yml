@@ -1,10 +1,25 @@
-name:      "Brock Cagann"
+name:      Brock Cagann
 markdown:  redcarpet
 pygments:  true
 permalink: pretty
 prose:
-  siteurl: "http://adamclaxon.github.io"
+  siteurl: "http://brockcagann.com"
   media: "img"
   rooturl: "_posts"
   metadata:
     _posts:
+      - name: "layout"
+        label: "Type"
+        field:
+        element: "select"
+        options:
+          - name: "Painting"
+            value: "painting"
+          - name: "Event"
+            value: "event"
+      - name: "banner"
+        label: "Banner Image File Name"
+        field:
+        element: "text"
+        value: ""
+      
