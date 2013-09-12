@@ -28,14 +28,10 @@ prose:
           - name: "Event"
             value: "event"
       - name: "tags"
-        label: "Oil or Watercolor?"
+        label: "If Painting: oil or watercolor? If Event: What type? i.e., gallery opening (all lowercase, space separated)"
         field:
-          element: "select"
-          options:
-            - name: "Oil"
-              value: "oil"
-            - name: "Watercolor"
-              value: "watercolor"
+          element: "text"
+          value: ""
       - name: "banner"
         label: "Banner Image File Name"
         field:
