@@ -1,0 +1,9 @@
+
+
+{% for post in site.categories.painting %}
+   <li class="{{ post.tags }} piece">
+		<div class="{{ post.tags }} thumbnail col two">
+			<a href="{{ post.url }}"><img src="{{ post.image }}" title="{{ post.title }}"></a>
+		</div>
+	</li>
+{% endfor %}

@@ -15,7 +15,7 @@ prose:
           element: "select"
           options:
             - name: "Painting"
-              value: "portfolio"
+              value: "painting"
             - name: "Event"
               value: "event"
       - name: "categories"
@@ -24,9 +24,18 @@ prose:
           element: "select"
           options:
           - name: "Painting"
-            value: "painting"
+            value: "portfolio painting"
           - name: "Event"
             value: "event"
+      - name: "tags"
+        label: "Oil or Watercolor?"
+        field:
+          element: "select"
+          options:
+            - name: "Oil"
+              value: "oil"
+            - name: "Watercolor"
+              value: "watercolor"
       - name: "banner"
         label: "Banner Image File Name"
         field:
