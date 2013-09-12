@@ -1,6 +1,5 @@
 name:      Brock Cagann
 markdown:  redcarpet
-pygments:  true
 permalink: /:categories/:title
 # Prose settings
 prose:
