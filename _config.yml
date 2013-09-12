@@ -1,7 +1,8 @@
 name:      Brock Cagann
 markdown:  redcarpet
 pygments:  true
-permalink: pretty
+permalink: /:categories/:title
+# Prose settings
 prose:
   siteurl: "http://brockcagann.com"
   media: "img"
@@ -11,8 +12,17 @@ prose:
       - name: "layout"
         label: "Type"
         field:
-        element: "select"
-        options:
+          element: "select"
+          options:
+            - name: "Painting"
+              value: "portfolio"
+            - name: "Event"
+              value: "event"
+      - name: "categories"
+        label: "Section"
+        field:
+          element: "select"
+          options:
           - name: "Painting"
             value: "painting"
           - name: "Event"
@@ -20,6 +30,10 @@ prose:
       - name: "banner"
         label: "Banner Image File Name"
         field:
-        element: "text"
-        value: ""
-      
+          element: "text"
+          value: ""
+      - name: "image"
+        label: "Main Image File Name"
+        field:
+          element: "text"
+          value: ""
