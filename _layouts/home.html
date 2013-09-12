@@ -3,9 +3,10 @@
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<title>{{ site.name }} | {{ page.title }}</title>
+		<link rel="alternate" type="application/atom+xml" href="@root_path/?/feed/">
 		<link rel="stylesheet" href="/css/main.css" type="text/css" media="screen">
 		<meta name="viewport" content="user-scalable=no, width=device-width" />
-		<script src="/js/jquery-1.7.1.min.js"></script>
+		<script src="/docs/js/jquery-1.7.1.min.js"></script>
 		<script type="text/javascript" src="//use.typekit.net/bpk3kip.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<script>
@@ -23,8 +24,4 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	</head>
-	<body>
-	<div id="container">
-	{% include header.html %}
-	{% include title.html %}
 	{{ content }}
