@@ -1,6 +1,7 @@
 name:      Brock Cagann
 markdown:  redcarpet
 permalink: /:categories/:title
+exclude:   ["sass"]
 # Prose settings
 prose:
   siteurl: "http://brockcagann.com"
