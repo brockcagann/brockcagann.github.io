@@ -308,6 +308,8 @@ footer {
 
 /* Typography */
 
+@import url(http://fonts.googleapis.com/css?family=Enriqueta:400,700);
+
 h1, h2, h3, h4 {
 /* 	-webkit-font-smoothing: antialiased; */
 }
@@ -378,7 +380,7 @@ h1.page {
 }
 
 p {
-	font: 24px/1.618em Georgia, Times, "Times New Roman", serif;
+	font: 24px/1.618em 'Enriqueta', Georgia, Times, "Times New Roman", serif;
 }
 
 #keywords {
@@ -386,7 +388,7 @@ p {
 }
 
 ul#filters {
-	font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: 'Enriqueta', Georgia, Times, "Times New Roman", serif;
 }
 
 section#info h2 {
