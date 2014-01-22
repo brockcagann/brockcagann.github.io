@@ -76,6 +76,44 @@
 
 }
 
+@media only screen and (min-width:768px) and (max-width:1024px) {
+
+/* Portfolio grid: 3 column / gutter: 3% ---------------------------------------- */
+
+[class*=" pb1"],[class^=pb1],[class*=" pb2"],[class^=pb2],[class*=" pb3"],[class^=pb3],.pb-all{display:block;float:left;clear:none;margin-right:-100%;}
+
+/* Portfolio grid spans ----- */
+
+.pb1,.pb3{width:6.24045138%;}.pb1-pb2 .pb1,.pb2-pb3 .pb3{width:6.87646467%;}.pb2{width:81.51041667%;}.pb1-pb2 .pb2,.pb2-pb3 .pb2{width:89.81778182%;}.pb1-pb2,.pb2-pb3{width:90.75086805%;}.pb-all{width:100%;margin-left:0;margin-right:0;clear:left;}
+
+/* Portfolio grid padding ----- */
+
+[class*=" pb-pad"],[class^=pb-pad]{padding-left:1.5%;padding-right:1.5%;left:-1.5%;}.pb1-pb2 [class*=" pb-pad"],.pb1-pb2 [class^=pb-pad],.pb2-pb3 [class*=" pb-pad"],.pb2-pb3 [class^=pb-pad]{padding-left:1.65287675%;padding-right:1.65287675%;left:-1.65287675%;}[class~=pb-padfull],[class~=pb-padinfull],[class~=pb-padfull],[class~=pb-padinfull],[class~=pb-padfull],[class~=pb-padinfull]{padding-left:3%;padding-right:3%;left:-3%;}.pb1-pb2 [class~=pb-padfull],.pb1-pb2 [class~=pb-padinfull],.pb1-pb2 [class~=pb-padfull],.pb1-pb2 [class~=pb-padinfull],.pb2-pb3 [class~=pb-padfull],.pb2-pb3 [class~=pb-padinfull],.pb2-pb3 [class~=pb-padfull],.pb2-pb3 [class~=pb-padinfull]{padding-left:3.3057535%;padding-right:3.3057535%;left:-3.3057535%;}.pb-pad,.pb-padfull{position:relative;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}.pb-padin[class~=pb-padin],.pb-padinfull[class~=pb-padinfull]{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;left:0;}
+
+/* Portfolio grid relationships ----- */
+
+[class*=" pb3"],[class^=pb3]{margin-left:93.75086805%;}.pb2-pb3 [class*=" pb3"],.pb2-pb3 [class^=pb3]{margin-left:93.12353533%;}[class*=" pb2"],[class^=pb2]{margin-left:9.24045138%;}.pb1-pb2 [class*=" pb2"],.pb1-pb2 [class^=pb2]{margin-left:10.18221818%;}
+.pb1,[class*=pb1-],.pb-all,[class*=" pb1-"],[class^=pb1-],.pb1,[class*=" pb1-"] [class*=" pb1-"],[class^=pb1-] [class*=" pb1-"],[class*=" pb1-"] [class^=pb1-],[class^=pb1-] [class^=pb1-],[class*=" pb1-"] .pb1,[class^=pb1-] .pb1,[class*=" pb2-"] [class*=" pb2-"],[class^=pb2-] [class*=" pb2-"],[class*=" pb2-"] [class^=pb2-],[class^=pb2-] [class^=pb2-],[class*=" pb2-"] .pb2,[class^=pb2-] .pb2,[class*=" pb3-"] [class*=" pb3-"],[class^=pb3-] [class*=" pb3-"],[class*=" pb3-"] [class^=pb3-],[class^=pb3-] [class^=pb3-],[class*=" pb3-"] .pb3,[class^=pb3-] .pb3{margin-left:0;clear:left;}
+
+/* Portfolio grid floats ----- */
+
+[class*=" pb-float"][class*=" pb-float"],[class^=pb-float][class^=pb-float],[class*=" pb-float"][class*=" pb-float"],[class^=pb-float][class^=pb-float],[class*=" pb-float"][class*=" pb-float"],[class^=pb-float][class^=pb-float]{margin-left:3%;margin-right:3%;}.pb1-pb2 [class*=" pb-float"][class*=" pb-float"],.pb1-pb2 [class^=pb-float][class^=pb-float],.pb1-pb2 [class*=" pb-float"][class*=" pb-float"],.pb1-pb2 [class^=pb-float][class^=pb-float],.pb2-pb3 [class*=" pb-float"][class*=" pb-float"],.pb2-pb3 [class^=pb-float][class^=pb-float],.pb2-pb3 [class*=" pb-float"][class*=" pb-float"],.pb2-pb3 [class^=pb-float][class^=pb-float]{margin-left:3.3057535034785%;margin-right:3.3057535034785%;}
+.pb-floatright{float:right;margin-right:0 !important;}
+.pb-floatleft{float:left;margin-left:0 !important;}
+
+/* Portfolio clearing ----- */
+
+.pb2+[class*=" pb2"],.pb2+[class^=pb2],[class*=-pb2]+[class*=" pb2"],[class*=-pb2]+[class^=pb2],.pb3+[class*=" pb3"],.pb3+[class^=pb3],[class*=-pb3]+[class*=" pb3"],[class*=-pb3]+[class^=pb3],.pb3+[class*=" pb2"],.pb3+[class^=pb2],[class*=-pb3]+[class*=" pb2"],[class*=-pb3]+[class^=pb2],.pb-clear{clear:left;}
+.pb-overlap[class*=overlap]{clear:none;}
+
+/* Portfolio hiding ----- */
+
+.pb-hide{display:none;}.pb-show{display:block;}
+
+.pb-showgrid .pb-show, .pb-showgrid.pb-show, .gridsetnoareas .pb-show{display:block !important;}
+
+}
+
 @media only screen and (min-width:481px) and (max-width:767px) {
 
 /* Phablets grid: 3 column / gutter: 3.03030303% ---------------------------------------- */
@@ -116,26 +154,26 @@
 
 @media only screen and (min-width:320px) and (max-width:480px) {
 
-/* Smartphones grid: 2 column / gutter: 3% ---------------------------------------- */
+/* Smartphones grid: 2 column / gutter: 6% ---------------------------------------- */
 
 [class*=" s1"],[class^=s1],[class*=" s2"],[class^=s2],.s-all{display:block;float:left;clear:none;margin-right:-100%;}
 
 /* Smartphones grid spans ----- */
 
-.s1,.s2{width:48.5%;}.s-all{width:100%;margin-left:0;margin-right:0;clear:left;}
+.s1,.s2{width:47%;}.s-all{width:100%;margin-left:0;margin-right:0;clear:left;}
 
 /* Smartphones grid padding ----- */
 
-[class*=" s-pad"],[class^=s-pad]{padding-left:1.5%;padding-right:1.5%;left:-1.5%;}[class~=s-padfull],[class~=s-padinfull],[class~=s-padfull],[class~=s-padinfull]{padding-left:3%;padding-right:3%;left:-3%;}.s-pad,.s-padfull{position:relative;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}.s-padin[class~=s-padin],.s-padinfull[class~=s-padinfull]{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;left:0;}
+[class*=" s-pad"],[class^=s-pad]{padding-left:3%;padding-right:3%;left:-3%;}[class~=s-padfull],[class~=s-padinfull],[class~=s-padfull],[class~=s-padinfull]{padding-left:6%;padding-right:6%;left:-6%;}.s-pad,.s-padfull{position:relative;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}.s-padin[class~=s-padin],.s-padinfull[class~=s-padinfull]{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;left:0;}
 
 /* Smartphones grid relationships ----- */
 
-[class*=" s2"],[class^=s2]{margin-left:51.5%;}
+[class*=" s2"],[class^=s2]{margin-left:53%;}
 .s1,[class*=s1-],.s-all,[class*=" s1-"],[class^=s1-],.s1,[class*=" s1-"] [class*=" s1-"],[class^=s1-] [class*=" s1-"],[class*=" s1-"] [class^=s1-],[class^=s1-] [class^=s1-],[class*=" s1-"] .s1,[class^=s1-] .s1,[class*=" s2-"] [class*=" s2-"],[class^=s2-] [class*=" s2-"],[class*=" s2-"] [class^=s2-],[class^=s2-] [class^=s2-],[class*=" s2-"] .s2,[class^=s2-] .s2{margin-left:0;clear:left;}
 
 /* Smartphones grid floats ----- */
 
-[class*=" s-float"][class*=" s-float"],[class^=s-float][class^=s-float],[class*=" s-float"][class*=" s-float"],[class^=s-float][class^=s-float]{margin-left:3%;margin-right:3%;}
+[class*=" s-float"][class*=" s-float"],[class^=s-float][class^=s-float],[class*=" s-float"][class*=" s-float"],[class^=s-float][class^=s-float]{margin-left:6%;margin-right:6%;}
 .s-floatright{float:right;margin-right:0 !important;}
 .s-floatleft{float:left;margin-left:0 !important;}
 

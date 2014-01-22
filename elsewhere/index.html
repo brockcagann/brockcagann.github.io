@@ -1,0 +1,12 @@
+---
+layout: default
+title:  Elsewhere
+---
+
+<ul class="">
+	{% for post in site.categories.elsewhere %}
+		<li>
+			<a href="{{ post.url }}" title="{{ post.title }}"><h2>{{ post.title }}</h2></a>
+		</li>
+	{% endfor %}
+</ul>

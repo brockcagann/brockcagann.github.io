@@ -2,17 +2,17 @@
 title: Portfolio
 layout: portfolio
 ---
-	<div id="content" class="section-clear d-all t-all p-padinfull s-padinfull">
+	<div id="content" class="section-clear d-all t-all p-all s-all">
 		<ul id="filters" class="d2-d4 t2-t4 p-padinfull s-padinfull d-clear t-clear add-bottom">
 			<li class="d2 t2"><a href="#" data-filter="*">show all</a></li>
 			<li class="d3 t3"><a href="#" data-filter=".watercolor">watercolor</a></li>
 			<li class="d4 t4"><a href="#" data-filter=".oil">oil</a></li>
 		</ul>
-		<ul class="project-list d-all t-all p-padinfull s-padinfull d-padin" id="pieces">
+		<ul class="project-list" id="pieces">
 			{% for post in site.categories.portfolio %}
 				<li class="{{ post.tags }} piece">
-					<div class="{{ post.tags }} thumbnail col two">
-					<a href="{{ post.url }}"><img src="{{ post.thumb }}" title="{{ post.title }}"></a>
+					<div class="{{ post.tags }}">
+						<a href="{{ post.url }}"><img src="{{ post.thumb }}" title="{{ post.title }}"></a>
 					</div>
 				</li>
 			{% endfor %}
@@ -22,6 +22,14 @@ layout: portfolio
 {% include footer.html %}
 <script src="/js/iphone.js"></script>
 <script src="/js/gridset-overlay.js"></script>
+<script>
+	var nav = responsiveNav(".nav-collapse", {
+	    animate: true,
+	    transition: 250,
+	    label: "☰",
+	    navClass: "nav-collapse",
+	});
+</script>
 </body>
 </html>
 <script>

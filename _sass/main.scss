@@ -220,10 +220,6 @@ body {
 	color: #777;
 }
 
-body#index {
-/* 	background: #e8e8e8; */
-}
-
 #container:before {
 	content: "";
 	position: fixed;
@@ -271,17 +267,13 @@ em.background {
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.01);
 }
 
-#index #site-header {
-/* 	background-color: white; */
-}
-
 #site-header h1 a{
 	color:#1d2c1f;
 }
 
 #site-header h1 {
 	color: $logo-darkgrey;
-	text-shadow: -0px 1px 0 #bbb, -1px 2px 0 #bbb, -2px 3px 0 #bbb;
+	text-shadow: -0px 1px 0 #bbb, -1px 2px 0 #bbb;
 }
 
 nav {
@@ -375,7 +367,7 @@ h2 {
 nav {
 	font-size: 0.618em;
 	letter-spacing: 0.08em;
-	padding-top: 0.618em;
+	padding-top: 1.618em;
 }
 
 nav a {
@@ -392,10 +384,6 @@ a {
 	font: 1.618em/1.618em 'Enriqueta', Georgia, Times, "Times New Roman", serif;
 	text-transform: capitalize;
 	letter-spacing: 0.02em;
-}
-
-#index #site-header h1 {
-/* 	padding-top: 0.618em; */
 }
 
 article h1 {
@@ -471,13 +459,13 @@ bg_start {
 	pointer-events: none;
 }
 
-nav ol {
+nav ul {
 	list-style: none;
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
 
-nav ol li {
+nav ul li {
 	list-style: none;
 	display: inline;
 	padding-right: 1.5em;
@@ -488,7 +476,6 @@ h1#title {
 }
 
 img#painting {
-/* 	display: block; */
 	padding-top: 2em;
 	margin-bottom: 2.618em;
 }
@@ -519,8 +506,24 @@ footer {
 	width: 40%;
 }
 
+#content .elsewhere p img {
+	width:auto;
+	float:left;
+	clear:left;
+	margin-top:0.5em;
+	margin-bottom:1.618em;
+	margin-right:1em;
+	display:inline-block;
+	width: 100%;
+}
+
 li.piece {
 	margin-bottom: 2px;
+}
+
+#pieces {
+	margin: 0 auto;
+	clear: both;
 }
 
 /* misc */
@@ -531,4 +534,71 @@ li.piece {
 
 .add-double-bottom {
 	padding-bottom: 1.618em !important;
+}
+
+.add-top {
+	padding-top: 1.618em !important;
+}
+
+@media only screen 
+and (min-width:1024px) {
+
+
+
+}
+
+@media only screen 
+and (min-width:768px) 
+and (max-width:1024px) {
+
+	nav {
+		padding-top: 0.618em;
+	}
+
+}
+
+@media only screen 
+and (min-width:481px) 
+and (max-width:767px) {
+
+	nav {
+		padding-top: 0.618em;
+	}
+
+}
+
+@media only screen 
+and (min-width:320px) 
+and (max-width:480px) {
+
+	body {
+		font-size: 17px;
+	}
+
+	nav {
+		font-size: 18px;
+		padding-top: 0;
+	}
+
+	nav ul li {
+		padding-right: 1em;
+	}
+
+	p {
+		font-size: 18px;
+	}
+
+	#index #content {
+		padding-top: 1.618em;
+		padding-bottom: 0.5em;
+	}
+
+	ul#filters {
+		list-style: none;
+	}
+
+	ul#filters li {
+		width: 25%;
+		margin: 0;
+	}
 }
