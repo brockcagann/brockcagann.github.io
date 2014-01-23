@@ -13,8 +13,6 @@ For personal inqueries contact Brock Cagann at 317-450-2083
 
 ## General Information
 
-Brock’s studio is located at Stutz II, #250  
-
 All images made possible thanks to Mary at [Heartland Printworks](http://www.heartlandprintworks.com).  
 
 Original photographs courtesy of the Bass photo collection at the Indiana Historical Society.  
